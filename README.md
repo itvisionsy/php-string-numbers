@@ -18,6 +18,8 @@ Use with care!
 
 # Examples
 ```PHP
+use ItvisionSy\StringNumbers\StringNumbers;
+
 echo StringNumbers::wordsToNumbers('one hundred fifty five');
 //155
 
