@@ -180,7 +180,7 @@ class StringNumbers {
             $t0 = $section % 10; //first digit
             $t1 = ($section % 100) - $t0; //second digit
             $t2 = $section - $t1 - $t0; //third digit
-            $sectionResult = array_merge([], ($multiplier > 1 && array_key_exists($multiplier, $flippedMap) ? [$flippedMap[$multiplier]] : []), ($t1 == 10 ? [$flippedMap[$t1 + $t0]] : ($t0 && array_key_exists($t0, $flippedMap) ? [$flippedMap[$t0]] : [])), ($t1 && $t1 !== 10 && array_key_exists($t1, $flippedMap) ? [$flippedMap[$t1]] : []), ($t2 ? [$flippedMap['100'], $flippedMap[(string) ($t2 / 100)]] : []));
+            $sectionResult = array_merge([], ($multiplier > 1 && $section > 1 && array_key_exists($multiplier, $flippedMap) ? [$flippedMap[$multiplier]] : []), ($t1 == 10 ? [$flippedMap[$t1 + $t0]] : ($t0 && array_key_exists($t0, $flippedMap) ? [$flippedMap[$t0]] : [])), ($t1 && $t1 !== 10 && array_key_exists($t1, $flippedMap) ? [$flippedMap[$t1]] : []), ($t2 ? [$flippedMap['100'], $flippedMap[(string) ($t2 / 100)]] : []));
             $result[] = join(" ", array_reverse($sectionResult));
             $multiplier*=1000;
             $digits = floor($digits / 1000);
