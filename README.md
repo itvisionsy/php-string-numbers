@@ -37,4 +37,4 @@ echo StringNumbers::numbersToWords('There are 366 days in a leap year and 2016 w
 ```
 
 # License
-PHP String Numbers project is under the [MIT Licence](./LICENSE)
+PHP String Numbers project is under the [MIT License](./LICENSE)
