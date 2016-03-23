@@ -3,7 +3,7 @@ A conversion class from text to numbers and vice versa
 
 # Install
 ## Using composer
-`composer install itvisionsy/php-string-numbers`
+`composer require itvisionsy/php-string-numbers`
 ## Direct download
 It is only 1 class! Copy and paste it or download it directly!
 [StringNumbers PHP Class](./src/StringNumbers.php)
