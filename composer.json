@@ -1,0 +1,15 @@
+{
+    "name": "itvisionsy/php-string-numbers",
+    "description": "A PHP class to convert from text to numbers and vice versa",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "ItvisionSy\\StringNumbers\\": "src/"
+        }
+    }
+}
